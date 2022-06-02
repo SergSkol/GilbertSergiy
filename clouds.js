@@ -33,10 +33,10 @@ function readLine() {
 
 function jumpingOnClouds(c) {
     // Write your code here
-    let j = 0;
+    let j = 0; // number of jumps
   for (let i = 0; i < c.length - 1; i++, j++) {
     if (i + 2 < c.length && c[i + 2] == 0) {
-      i++;
+      i++; // additional increment to jump over
     }
   }
   return j;
